@@ -1,0 +1,59 @@
+{
+  "platform": "linkedin",
+  "language": "en",
+  "timezone": "UTC",
+  "cadence": [
+    {
+      "weekday": "Monday",
+      "format": "slides"
+    },
+    {
+      "weekday": "Wednesday",
+      "format": "slides"
+    },
+    {
+      "weekday": "Friday",
+      "format": "video"
+    }
+  ],
+  "schedule": {
+    "editorial_only": true,
+    "time": "09:00"
+  },
+  "formats": [
+    "slides",
+    "video"
+  ],
+  "output_dir": "out/demo",
+  "slides": {
+    "width": 1080,
+    "height": 1350
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "min_scene_seconds": 5.0,
+    "phrase_pause_seconds": 0.18
+  },
+  "theme": {
+    "bg": "#07111F",
+    "panel": "#0D1D30",
+    "line": "#607D98",
+    "white": "#F0F6FC",
+    "muted": "#C1D0DF",
+    "cyan": "#62E8EF",
+    "amber": "#FFBD69"
+  },
+  "tts": {
+    "provider": "wav",
+    "length_scale": 1.0,
+    "noise_scale": 0.667,
+    "noise_w_scale": 0.8,
+    "rights_reviewed": false
+  },
+  "integrations": {
+    "writing_guidance": "optional: LINKEDIN_SKILLS_DIR; no runtime service",
+    "publishing": "disabled; no implementation"
+  }
+}

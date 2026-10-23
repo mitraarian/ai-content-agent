@@ -1,0 +1,193 @@
+{
+  "title": "Synthetic tile sorter",
+  "example_label": "SYNTHETIC DEMO",
+  "footer": "FICTIONAL EXAMPLE / NOT A REAL SYSTEM",
+  "caption": "Synthetic renderer demonstration: a fictional tile sorter. No real system, benchmark or personal experience is represented.\n\nEngine documentation:\nhttps://www.remotion.dev/docs/\nhttps://pillow.readthedocs.io/\n",
+  "sources": [
+    {
+      "url": "https://www.remotion.dev/docs/",
+      "purpose": "Renderer documentation; not evidence of a real tile sorting deployment"
+    },
+    {
+      "url": "https://pillow.readthedocs.io/",
+      "purpose": "PNG imaging library documentation"
+    }
+  ],
+  "slides": [
+    {
+      "section": "THE SYNTHETIC EXAMPLE",
+      "title": "A tiny sorting line",
+      "intro": "A fictional conveyor sorts colored tiles. This is a renderer demo, not a real system.",
+      "cards": [
+        {
+          "label": "INPUT",
+          "body": "Blue, amber and blue."
+        },
+        {
+          "label": "RULE",
+          "body": "Blue goes left. Amber goes right."
+        }
+      ]
+    },
+    {
+      "section": "DEFINE THE RULE",
+      "title": "One color, one route",
+      "intro": "A rule maps each supported input to a named destination.",
+      "cards": [
+        {
+          "label": "BLUE",
+          "body": "Send the tile to the left bin."
+        },
+        {
+          "label": "AMBER",
+          "body": "Send the tile to the right bin."
+        }
+      ]
+    },
+    {
+      "section": "SHOW THE MECHANISM",
+      "title": "Read, then route",
+      "intro": "The fictional machine reads a color before choosing the destination.",
+      "cards": [
+        {
+          "label": "READ",
+          "body": "Observe one tile."
+        },
+        {
+          "label": "ROUTE",
+          "body": "Apply the matching rule."
+        }
+      ]
+    },
+    {
+      "section": "MAKE THE BOUNDARY VISIBLE",
+      "title": "An unknown color arrives",
+      "intro": "A purple tile has no route in this deliberately small example.",
+      "cards": [
+        {
+          "label": "KNOWN",
+          "body": "Blue or amber: route it."
+        },
+        {
+          "label": "UNKNOWN",
+          "body": "Purple: pause for inspection."
+        }
+      ]
+    },
+    {
+      "section": "EXPLAIN THE TRADE-OFF",
+      "title": "Pausing has a cost",
+      "intro": "Stopping an unknown tile delays the line. Guessing could send it to the wrong bin.",
+      "cards": [
+        {
+          "label": "PAUSE",
+          "body": "Keep the unknown tile visible."
+        },
+        {
+          "label": "GUESS",
+          "body": "Hide uncertainty in a route."
+        }
+      ]
+    },
+    {
+      "section": "CHECK THE OUTPUT",
+      "title": "Count the destinations",
+      "intro": "The example starts with three tiles. The expected result is two left and one right.",
+      "cards": [
+        {
+          "label": "LEFT BIN",
+          "body": "Two blue tiles."
+        },
+        {
+          "label": "RIGHT BIN",
+          "body": "One amber tile."
+        }
+      ]
+    },
+    {
+      "section": "REUSE THE TEMPLATE",
+      "title": "Replace the demo data",
+      "intro": "Write your own evidence-backed explanation in the editable JSON. Keep the example label when appropriate.",
+      "cards": [
+        {
+          "label": "DELIVER",
+          "body": "Ordered images and a caption."
+        },
+        {
+          "label": "REVIEW",
+          "body": "Inspect mobile text before upload."
+        }
+      ]
+    }
+  ],
+  "video": {
+    "scenes": [
+      {
+        "title": "A small sorting line",
+        "summary": "Three fictional tiles enter a conveyor.",
+        "left": "Two blue, one amber",
+        "right": "Three tiles to route",
+        "note": "Synthetic data only.",
+        "phrases": [
+          "This fictional conveyor has three colored tiles.",
+          "Two are blue, and one is amber."
+        ]
+      },
+      {
+        "title": "Make the rule explicit",
+        "summary": "A color selects a destination.",
+        "left": "Blue goes left",
+        "right": "Amber goes right",
+        "note": "No learned model is involved.",
+        "phrases": [
+          "The rule sends blue tiles to the left.",
+          "Amber tiles go to the right bin."
+        ]
+      },
+      {
+        "title": "Read before routing",
+        "summary": "Each tile is inspected first.",
+        "left": "Read the color",
+        "right": "Choose the route",
+        "note": "The order is part of the example.",
+        "phrases": [
+          "First the machine reads the color of a tile.",
+          "Then it applies the matching routing rule."
+        ]
+      },
+      {
+        "title": "An unknown tile",
+        "summary": "Purple is outside the small rule set.",
+        "left": "Purple has no rule",
+        "right": "Pause for inspection",
+        "note": "The machine does not guess.",
+        "phrases": [
+          "Now imagine that a purple tile arrives.",
+          "This example pauses because purple has no route."
+        ]
+      },
+      {
+        "title": "Show the trade-off",
+        "summary": "A pause makes uncertainty visible.",
+        "left": "A pause delays work",
+        "right": "A guess may misroute",
+        "note": "This is an illustrative design choice.",
+        "phrases": [
+          "Pausing delays the line while someone checks the tile.",
+          "Guessing could quietly send it to the wrong bin."
+        ]
+      },
+      {
+        "title": "Review the result",
+        "summary": "Return to the original three tiles.",
+        "left": "Two tiles left",
+        "right": "One tile right",
+        "note": "Inspect the exported images and captions.",
+        "phrases": [
+          "For the original three tiles, check both bins.",
+          "There should be two on the left and one on the right."
+        ]
+      }
+    ]
+  }
+}

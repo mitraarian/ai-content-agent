@@ -1,0 +1,26 @@
+{
+  "name": "ai-content-production-agent",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Local PNG and narrated Remotion video production from editable content data",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "render:video": "node scripts/render_video.mjs",
+    "smoke": "python tests/smoke.py"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

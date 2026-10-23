@@ -1,0 +1,22 @@
+# Generated or private material is never part of the engine export.
+node_modules/
+.venv*/
+__pycache__/
+*.py[cod]
+out/
+dist/
+content/
+research/
+models/
+.local/
+.env
+.env.*
+!.env.example
+*.log
+*.mp4
+*.wav
+*.mp3
+*.pdf
+*.onnx
+*.onnx.json
+.DS_Store
